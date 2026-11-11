@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#edeae2">
+  <meta name="description" content="DDent Stomatologie — îngrijire dentară atentă, tratamente personalizate și o echipă dedicată în Chișinău, str. Albișoara 82/6. Programează o consultație.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:title" content="DDent — Stomatologie cu grijă, în Chișinău">
+  <meta property="og:description" content="Fiecare zâmbet merită să fie ascultat. Descoperă DDent Stomatologie.">
+  <meta property="og:image" content="https://ddent-studio.vercel.app/og.png">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://ddent-studio.vercel.app/og.png">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://ddent.md/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+  <link rel="preload" as="image" href="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=1200&q=75" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>DDent — Stomatologie cu grijă | Chișinău</title>
+  <style>
+    :root{--paper:#edeae2;--linen:#f8f7f2;--ink:#1f302c;--forest:#274a3d;--sage:#9ea99a;--amber:#a57651;--line:#d8d8cf;--white:#fff;--display:"Playfair Display",Georgia,serif;--body:"DM Sans",Arial,sans-serif}
+    *,*:before,*:after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:84px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased}
+    body.menu-open{overflow:hidden}
+    ::selection{background:#c6dacd;color:var(--ink)}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;cursor:pointer}
+    button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #c78d54;outline-offset:4px}
+    .skip{position:absolute;left:12px;top:-70px;padding:12px;background:#fff;z-index:1000}.skip:focus{top:12px}
+    .wrap{width:min(1420px,calc(100% - 7.8vw));margin:auto}
+    .eyebrow{font-family:Manrope,Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase;font-size:10px;font-weight:800}
+    .serif{font-family:var(--display);font-weight:400}
+    .line{height:1px;background:var(--line)}
+    .nav{height:87px;background:var(--paper);display:flex;align-items:center;position:sticky;top:0;z-index:100;border-bottom:1px solid #d4d6cb;transition:height .3s,box-shadow .3s}
+    .nav.scrolled{height:74px;box-shadow:0 6px 24px #182f2910}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+    .logo-symbol{width:34px;height:40px}
+    .logo-text{display:flex;flex-direction:column;line-height:1}
+    .logo-text strong{font-family:Manrope,Arial,sans-serif;font-size:23px;letter-spacing:-.095em;font-weight:800}
+    .logo-text small{font-size:7px;font-weight:800;letter-spacing:.22em;margin-top:6px}
+    .nav-links{display:flex;align-items:center;gap:clamp(17px,2.3vw,42px);font-size:12px;font-weight:700}
+    .nav-links a{position:relative}
+    .nav-links a:after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--forest);transition:width .25s}
+    .nav-links a:hover:after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:15px}
+    .language{font-size:10px;letter-spacing:.1em;font-weight:800;opacity:.65}
+    .pill{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:15px 22px;border-radius:2px;background:var(--forest);color:white;font-size:11px;font-weight:800;letter-spacing:.05em;transition:background .3s,transform .3s;border:1px solid var(--forest)}
+    .pill:hover{background:#38674f;transform:translateY(-2px)}
+    .pill.secondary{background:transparent;color:var(--ink);border-color:var(--ink)}
+    .pill.secondary:hover{background:var(--ink);color:white}
+    .pill .arrow{font-size:16px;font-weight:400}
+    .menu-toggle{display:none;align-items:center;justify-content:center;border:0;background:none;padding:10px}
+    .menu-toggle i{width:23px;height:2px;background:var(--ink);display:block;position:relative}
+    .menu-toggle i:before,.menu-toggle i:after{content:"";position:absolute;width:23px;height:2px;left:0;background:var(--ink)}
+    .menu-toggle i:before{top:-7px}.menu-toggle i:after{top:7px}
+    .hero{position:relative;min-height:730px;display:grid;grid-template-columns:44% 56%;overflow:hidden}
+    .hero-copy{position:relative;padding:clamp(65px,7vw,120px) 4% 55px max(3.9vw,calc((100vw - 1420px)/2));z-index:3;display:flex;flex-direction:column;justify-content:center}
+    .hero-index{display:flex;align-items:center;gap:13px;color:#626e62}
+    .hero-index:before{content:"";height:1px;width:37px;background:var(--amber)}
+    h1{margin:31px 0 24px;font-family:var(--display);font-size:clamp(68px,7.45vw,127px);font-weight:400;line-height:.95;letter-spacing:-.075em}
+    h1 em{font-weight:400;color:var(--amber)}
+    .hero-sub{font-size:clamp(13px,1.05vw,16px);line-height:1.8;color:#56665c;max-width:340px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:37px}
+    .hero-foot{display:flex;align-items:center;gap:16px;margin-top:72px;font-size:10px;letter-spacing:.09em;font-weight:700;color:#627166}
+    .hero-foot .ring{width:38px;height:38px;border-radius:50%;border:1px solid #a9b2a6;display:flex;align-items:center;justify-content:center;font-size:17px}
+    .hero-visual{position:relative;overflow:hidden;background:#c9c5b6;min-height:730px}
+    .hero-visual video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.61) contrast(.94) sepia(.1);transform:scale(1.08);pointer-events:none}
+    .hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#2b352e1c,transparent 46%),linear-gradient(0deg,#1d282c85,transparent 34%)}
+    .glass-grain{position:absolute;inset:0;opacity:.14;pointer-events:none;z-index:1;background-image:url('data:image/svg+xml,%3Csvg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="n"%3E%3CfeTurbulence type="fractalNoise" baseFrequency=".5" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23n)" opacity=".3"/%3E%3C/svg%3E')}
+    .hero-overprint{position:absolute;inset:37px;z-index:2;pointer-events:none;border:1px solid #ffffff6b}
+    .hero-overprint:before,.hero-overprint:after{position:absolute;color:#fff;letter-spacing:.17em;font-size:9px;font-weight:800}
+    .hero-overprint:before{content:"DDENT /  CHIȘINĂU";top:19px;left:20px}
+    .hero-overprint:after{content:"YOUR SMILE, YOUR STORY";bottom:19px;right:20px}
+    .hero-vertical{position:absolute;z-index:2;right:60px;top:50%;writing-mode:vertical-rl;text-transform:uppercase;letter-spacing:.3em;font-size:10px;color:white;opacity:.83}
+    .video-control{position:absolute;z-index:5;bottom:55px;left:55px;display:flex;align-items:center;gap:12px;color:#fff;background:#ffffff23;border:1px solid #ffffff78;backdrop-filter:blur(9px);padding:12px 17px;font-size:10px;letter-spacing:.14em}
+    .video-control span{font-size:16px}
+    .hero-visual .visual-caption{position:absolute;right:48px;bottom:75px;z-index:2;color:#fff;font-size:9px;letter-spacing:.08em}
+    .ribbon{border-top:1px solid #d8d8cf;border-bottom:1px solid #d8d8cf;background:#e4e4dc;overflow:hidden}
+    .ribbon-in{display:flex;white-space:nowrap;align-items:center;gap:35px;padding:20px 0;width:max-content;animation:marquee 34s linear infinite}
+    .ribbon-in span{font-size:10px;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:#4a584d}
+    .ribbon-in i{font-size:16px;color:var(--amber);font-style:normal}
+    @keyframes marquee{to{transform:translateX(-50%)}}
+    .about{padding:135px 0 125px}
+    .about-grid{display:grid;grid-template-columns:1fr 1.02fr;gap:clamp(40px,9vw,140px);align-items:center}
+    .section-number{font-size:11px;font-weight:800;letter-spacing:.23em;color:var(--amber);margin-bottom:28px;display:flex;align-items:center;gap:14px}
+    .section-number:after{content:"";width:45px;height:1px;background:var(--amber)}
+    h2{font-family:var(--display);font-weight:400;letter-spacing:-.05em;line-height:1.06;font-size:clamp(48px,5.35vw,90px);margin:0 0 28px}
+    h2 em{font-weight:400;color:var(--amber)}
+    .bodycopy{font-size:14px;line-height:1.95;color:#536257;max-width:480px}
+    .about-grid .overline{margin:26px 0 0;font-weight:700;line-height:1.8}
+    .portrait-frame{height:min(62vw,650px);position:relative;overflow:hidden;background:#a6b1a4}
+    .portrait-frame img{width:100%;height:100%;object-fit:cover;filter:saturate(.63);will-change:transform;transform:translate3d(0,0,0) scale(1.1)}
+    .portrait-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#19322555,transparent 45%)}
+    .photo-label{position:absolute;bottom:24px;left:24px;z-index:2;color:white;font-size:9px;letter-spacing:.17em;text-transform:uppercase}
+    .mini-badge{position:absolute;z-index:3;left:-55px;top:11%;width:130px;height:130px;border-radius:50%;background:#d8c9b1;display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--display);font-size:23px;transform:rotate(-12deg)}
+    .mini-badge span{font-size:10px;display:block;font-family:var(--body);line-height:1.3}
+    .section-intro{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:70px}
+    .section-intro h2{max-width:720px;margin-bottom:0}
+    .services{background:#243c32;color:var(--linen);padding:115px 0 135px}
+    .services .section-number{color:#cfb18d}
+    .services .section-number:after{background:#cfb18d}
+    .services .section-intro .bodycopy{color:#bed0be}
+    .service-list{border-top:1px solid #688077}
+    .service-row{border-bottom:1px solid #688077;position:relative;transition:background .3s}
+    .service-row:hover,.service-row[open]{background:#2d4d3f}
+    .service-row summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:70px 1fr 55px;align-items:center;padding:28px 18px 29px 4px;gap:20px}
+    .service-row summary::-webkit-details-marker{display:none}
+    .service-num{color:#b5c5b7;font-size:11px;letter-spacing:.16em}
+    .service-title{font-family:var(--display);font-size:clamp(28px,3.3vw,50px);letter-spacing:-.035em}
+    .service-icon{width:39px;height:39px;border:1px solid #8da297;border-radius:50%;display:grid;place-items:center;font-size:21px;transition:transform .3s}
+    .service-row[open] .service-icon{transform:rotate(45deg)}
+    .service-details{padding:0 80px 25px 94px;color:#d4e1d3;font-size:13px;line-height:1.8;max-width:800px}
+    .service-details a{color:#f3d8b6;font-size:11px;font-weight:800;letter-spacing:.08em;display:inline-block;margin-top:8px}
+    .editorial{height:70vw;min-height:560px;max-height:780px;position:relative;background:#bdac96;overflow:hidden;display:flex;align-items:end}
+    .editorial img{position:absolute;inset:0;width:100%;height:115%;object-fit:cover;object-position:center 38%;filter:saturate(.63);transform:translate3d(0,0,0) scale(1.07)}
+    .editorial:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#10271fb5,transparent 65%)}
+    .editorial-content{position:relative;z-index:2;color:white;padding-bottom:75px}
+    .editorial-content h2{font-size:clamp(54px,8vw,118px);max-width:950px}
+    .editorial-content .eyebrow{color:#e4d8c6}
+    .numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-bottom:1px solid #c6cec4;padding:54px 0}
+    .number-cell{border-right:1px solid #c6cec4;padding:4px 20px}
+    .number-cell:last-child{border:0}
+    .number-cell strong{font-family:var(--display);font-size:clamp(36px,4vw,60px);font-weight:400}
+    .number-cell span{display:block;font-size:11px;color:#6a796d;margin-top:7px}
+    .reviews{padding:135px 0 125px;background:#f5f4ed}
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d5d9cf;border:1px solid #d5d9cf}
+    .review{padding:40px 32px 35px;background:#f5f4ed;display:flex;flex-direction:column;min-height:335px}
+    .quote-symbol{font-family:Georgia,serif;color:#a57f5f;font-size:53px;height:45px}
+    .review blockquote{margin:18px 0 28px;font-family:var(--display);font-size:clamp(17px,1.6vw,23px);line-height:1.57;letter-spacing:-.015em;flex-grow:1}
+    .review-author{font-size:12px;font-weight:800;letter-spacing:.04em}
+    .review-sub{font-size:10px;color:#718174;margin-top:5px}
+    .reviews-note{display:flex;align-items:center;justify-content:space-between;gap:25px;font-size:11px;color:#728176;margin-top:25px}
+    .map-section{background:var(--paper);padding:125px 0}
+    .visit-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:8vw;align-items:start}
+    .visit-grid h2{margin-bottom:44px}
+    .hours{display:grid;grid-template-columns:1fr auto;gap:12px 24px;max-width:400px;padding-bottom:37px;border-bottom:1px solid #cbd1c8;font-size:13px}
+    .hours span{color:#5a6a60}.hours strong{font-weight:600}
+    .contact-block{margin-top:34px}
+    .contact-block .eyebrow{color:#8e7459;margin-bottom:10px}
+    .contact-block p,.contact-block a{font-size:14px;line-height:1.9}
+    .contact-block a{text-decoration:underline;text-underline-offset:4px}
+    .map-link{display:block;position:relative;overflow:hidden;height:520px;background:#d8d8cf}
+    .map-link .map-art{position:absolute;inset:0;background:radial-gradient(ellipse at 62% 42%,#e9ede1 0%,#d6dbd0 32%,transparent 34%),repeating-linear-gradient(24deg,transparent 0 45px,#ced5ca 45px 49px,transparent 49px 120px),repeating-linear-gradient(-56deg,transparent 0 65px,#c4cdbd 65px 69px,transparent 69px 145px),#dbe0d5;transform:scale(1.06);transition:transform .55s}
+    .map-link:hover .map-art{transform:scale(1.13)}
+    .map-pin{position:absolute;left:49%;top:45%;width:74px;height:74px;border-radius:50%;background:var(--forest);border:8px solid #ffffffdb;display:grid;place-items:center;box-shadow:0 15px 45px #2b4d3a44;color:#fff;font-family:var(--display);font-size:24px;transform:translate(-50%,-50%)}
+    .map-caption{position:absolute;bottom:28px;left:28px;right:28px;background:#faf9f3;padding:22px 25px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px}
+    .map-caption b{display:block;font-size:15px}.map-caption small{display:block;color:#738073;margin-top:5px}
+    .map-caption .arr{font-size:25px}
+    .cta{background:#ddc7a9;padding:120px 0;position:relative;overflow:hidden}
+    .cta:after{content:"DD";position:absolute;right:-60px;bottom:-170px;font-family:var(--display);font-size:540px;letter-spacing:-.17em;line-height:1;opacity:.06;pointer-events:none}
+    .cta-inner{position:relative;z-index:2;max-width:950px}
+    .cta h2{font-size:clamp(62px,8vw,115px);margin:22px 0 35px}
+    .cta h2 em{color:var(--forest)}
+    .cta .pill{padding:18px 25px}
+    .footer{background:#1b3028;color:#f2f1e9;padding:75px 0 30px}
+    .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:50px}
+    .footer .logo-symbol{filter:brightness(0) invert(1)}
+    .footer-desc{font-family:var(--display);font-size:25px;line-height:1.4;max-width:370px;margin:23px 0 0}
+    .footer .eyebrow{font-size:9px;color:#b9c7b7;margin-bottom:20px}
+    .footer p,.footer a{font-size:12px;line-height:2;color:#e0e9dd}
+    .footer a:hover{text-decoration:underline}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:70px;padding-top:21px;border-top:1px solid #53695a;color:#a9baa8;font-size:10px}
+    .footer-bottom a{font-size:10px;color:#a9baa8}
+    .mobile-book{display:none}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .85s ease,transform .85s cubic-bezier(.21,.72,.29,1)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .visual-label{font-size:9px;text-transform:uppercase;letter-spacing:.17em}
+    @media(max-width:1100px){.nav-links{gap:15px}.nav-right .language{display:none}.hero{grid-template-columns:47% 53%}.hero-copy{padding-right:2%}.hero-foot{margin-top:42px}}
+    @media(max-width:800px){.nav{height:72px}.nav.scrolled{height:68px}.nav-links{display:none;position:fixed;left:0;right:0;top:70px;height:calc(100dvh - 70px);background:var(--paper);padding:55px 8vw;flex-direction:column;align-items:flex-start;gap:32px;font-family:var(--display);font-size:34px;z-index:200}.nav-links.open{display:flex}.nav-right .pill{display:none}.menu-toggle{display:flex}.hero{display:flex;flex-direction:column-reverse;min-height:unset}.hero-visual{min-height:430px;height:57vh;max-height:680px}.hero-copy{padding:55px 7vw 70px}.hero h1{font-size:clamp(65px,11vw,100px);margin:21px 0}.hero-sub{max-width:540px}.hero-foot{margin-top:45px}.about-grid,.visit-grid{grid-template-columns:1fr}.about{padding:90px 0}.portrait-frame{height:520px}.mini-badge{left:-20px;width:110px;height:110px}.services{padding:85px 0}.section-intro{display:block;margin-bottom:40px}.section-intro .bodycopy{margin-top:25px}.editorial{height:670px}.reviews{padding:90px 0}.reviews-grid{grid-template-columns:1fr}.review{min-height:210px;padding:30px}.review blockquote{font-size:21px}.map-section{padding:90px 0}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid > div:first-child{grid-column:1/-1}.cta{padding:90px 0}}
+    @media(max-width:520px){.wrap{width:calc(100% - 38px)}.logo-symbol{width:29px}.logo-text strong{font-size:21px}.hero-visual{min-height:360px;height:49vh}.hero-overprint{inset:17px}.hero-overprint:before{left:13px;top:13px;font-size:8px}.hero-overprint:after{bottom:12px;right:13px;font-size:8px}.hero-vertical{right:33px}.video-control{left:32px;bottom:36px;padding:10px 12px}.hero-visual .visual-caption{display:none}.hero-copy{padding:48px 19px 57px}.hero h1{font-size:clamp(63px,14.5vw,89px)}.hero-actions .pill{width:100%}.hero-foot{margin-top:35px}.about{padding:75px 0}.portrait-frame{height:390px}.mini-badge{width:94px;height:94px;left:-5px;font-size:20px}.mini-badge span{font-size:8px}h2{font-size:clamp(48px,12vw,70px)}.service-row summary{grid-template-columns:36px 1fr 35px;gap:9px;padding:21px 7px}.service-title{font-size:clamp(25px,7vw,37px)}.service-details{padding:0 25px 23px 45px}.editorial{min-height:520px;height:590px}.editorial-content{padding-bottom:45px}.editorial-content h2{font-size:58px}.numbers{grid-template-columns:1fr;gap:0}.number-cell{border-right:0;border-bottom:1px solid #c6cec4;padding:16px 0}.number-cell:last-child{border:0}.number-cell strong{font-size:45px}.reviews-note{flex-direction:column;align-items:flex-start}.map-link{height:390px}.map-caption{bottom:16px;left:16px;right:16px;padding:17px;font-size:11px}.map-caption b{font-size:13px}.cta h2{font-size:65px}.cta:after{font-size:350px;bottom:-110px}.footer{padding-bottom:90px}.footer-grid{grid-template-columns:1fr;gap:28px}.footer-grid > div:first-child{grid-column:auto}.footer-bottom{display:block}.footer-bottom span{display:block;margin-bottom:12px}.mobile-book{position:fixed;bottom:0;left:0;right:0;z-index:99;padding:10px max(16px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom));display:flex;gap:9px;background:#edeae2ec;backdrop-filter:blur(12px);border-top:1px solid #c4cbc0}.mobile-book a{flex:1;text-align:center;font-size:11px;padding:14px 9px}.mobile-book a:last-child{background:transparent;color:var(--forest);border-color:var(--forest)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.portrait-frame img,.editorial img,.hero-visual video{transform:none!important}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dentist","name":"DDent Stomatologie","url":"https://ddent.md/","telephone":"+37379526737","address":{"@type":"PostalAddress","streetAddress":"Strada Albișoara 82/6, of. 4","addressLocality":"Chișinău","addressCountry":"MD","postalCode":"MD-2005"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"15:00"}]}</script>
+<link rel="stylesheet" href="/enhancements.css">
+</head>
+<body>
+<a href="#main" class="skip">Sari la conținut</a>
+<header class="nav" id="navigation">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#acasa" aria-label="DDent Stomatologie — acasă">
+      <svg class="logo-symbol" viewBox="0 0 43 50" fill="none" aria-hidden="true"><path d="M7 5C11 1.8 16 2 21.5 5c6-3 11.1-3.2 14.5 0 7.6 7.1 2.1 22.6-1.7 30.5-2.7 5.6-6.4 10-9 10-3.3 0-2.6-11-4.3-14.5-1.1-2.3-3.3-2.3-4.4 0-1.7 3.5-1 14.5-4.3 14.5-2.6 0-6.2-4.4-9-10C4.9 27.6-.6 12.1 7 5Z" stroke="currentColor" stroke-width="2.3"/><path d="M21.5 5v18.5" stroke="currentColor" stroke-width="2.3"/><circle cx="21.5" cy="23.5" r="2.5" fill="#A57651"/></svg>
+      <span class="logo-text"><strong>DDent</strong><small>STOMATOLOGIE</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Navigare principală">
+      <a href="#filosofie">Despre noi</a><a href="#servicii">Servicii</a><a href="#cazuri">Cazuri</a><a href="#recenzii">Recenzii</a><a href="#viziteaza">Contact</a>
+    </nav>
+    <div class="nav-right"><select class="language-picker" id="langSelect" aria-label="Select language"><option value="ro">RO</option><option value="ru">RU</option><option value="en">EN</option></select><a class="pill" href="tel:+37379526737">Programează-te <span class="arrow">↗</span></a><button type="button" id="menuToggle" class="menu-toggle" aria-label="Deschide meniul" aria-controls="navLinks" aria-expanded="false"><i></i></button></div>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" id="acasa" aria-label="Bine ai venit la DDent">
+    <div class="hero-copy"><div class="hero-index eyebrow">DDent Stomatologie · Chișinău</div><h1>Grija<br>se vede<br>în <em>zâmbet.</em></h1><p class="hero-sub">Mai mult decât o vizită la stomatolog. Un loc în care atenția, timpul și încrederea fac parte din îngrijire.</p><div class="hero-actions"><a class="pill" href="tel:+37379526737">Programează o consultație <span class="arrow">↗</span></a><a class="pill secondary" href="#filosofie">Descoperă DDent <span class="arrow">↓</span></a></div><div class="hero-foot"><span class="ring">↓</span><a href="/ghid-ddent.pdf" download="Ghidul-zambetului-DDent.pdf">DESCARCĂ GHIDUL GRATUIT DE PREVENȚIE (PDF)</a></div></div>
+    <div class="hero-visual" id="heroVisual"><video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80" aria-label="Cadre cinematografice ilustrative dintr-un cabinet stomatologic"><source src="https://videos.pexels.com/video-files/5356842/5356842-hd_1920_1080_25fps.mp4" type="video/mp4"></video><div class="glass-grain" data-depth="0.08"></div><div class="hero-overprint" data-depth="0.14"></div><div class="hero-vertical" data-depth="0.24">A MORE HUMAN KIND OF DENTISTRY</div><button class="video-control" id="videoToggle" aria-label="Pune videoclipul pe pauză"><span id="videoIcon">Ⅱ</span> <b id="videoState">PAUZĂ VIDEO</b></button><span class="visual-caption">Video ilustrativ · Pexels</span></div>
+  </section>
+  <div class="ribbon" aria-hidden="true"><div class="ribbon-in"><span>Calm înainte de toate</span><i>✳</i><span>Îngrijire atentă</span><i>✳</i><span>Un plan pentru tine</span><i>✳</i><span>Din 2016 în Chișinău</span><i>✳</i><span>Calm înainte de toate</span><i>✳</i><span>Îngrijire atentă</span><i>✳</i><span>Un plan pentru tine</span><i>✳</i><span>Din 2016 în Chișinău</span><i>✳</i></div></div>
+  <section class="about" id="filosofie"><div class="wrap about-grid">
+    <div class="reveal"><p class="section-number">01 / FILOSOFIA NOASTRĂ</p><h2>Întâi,<br><em>te ascultăm.</em></h2><p class="bodycopy">Fiecare pacient vine cu o poveste diferită. La DDent, primul pas este să înțelegem nevoile tale, să discutăm opțiunile și să găsim împreună direcția potrivită pentru sănătatea ta orală.</p><p class="bodycopy">Fondată în 2016 de medicul stomatolog Andrei Dumbravă, clinica oferă o gamă amplă de servicii dentare într-un cadru dedicat îngrijirii individuale.</p><p class="overline">Personal. Atent. Fără grabă.</p></div>
+    <div style="position:relative" class="reveal"><div class="portrait-frame"><img src="https://images.pexels.com/photos/3845657/pexels-photo-3845657.jpeg?auto=compress&cs=tinysrgb&w=1400&q=84" loading="lazy" alt="Pacient discutând cu un medic stomatolog, fotografie ilustrativă Pexels" data-depth="-0.08"><div class="photo-label">Imagine ilustrativă / experiență pacient</div></div><div class="mini-badge">2016<span>ANUL<br>ÎNFIINȚĂRII</span></div></div>
+  </div></section><section class="guide-spot" id="ghid"><div class="wrap"><div class="guide-panel reveal"><div class="guide-content"><div class="eyebrow">GHID GRATUIT · PREVENȚIE</div><h2>Un pas simplu pentru<br><em>un zâmbet sănătos.</em></h2><p>Descoperă patru obiceiuri esențiale de îngrijire orală, într-un ghid gratuit, ușor de păstrat pe telefon.</p><a class="guide-cta" href="/ghid-ddent.pdf" download="Ghidul-zambetului-DDent.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4"/></svg>DESCARCĂ PDF GRATUIT ↗</a><p style="font-size:10px;margin-top:12px">Disponibil fără înregistrare.</p></div><div class="guide-preview" aria-hidden="true"><div class="guide-book"><b>DDent<small style="display:block;font-size:7px;letter-spacing:1.6px">STOMATOLOGIE</small></b><div class="book-title">Grija de zi cu zi pentru <em>zâmbetul tău.</em></div></div></div></div></div></section>
+  <section class="specialties" id="servicii"><div class="wrap"><p class="section-number">02 / SPECIALITĂȚI</p><div class="specialty-intro"><h2>Specialitățile <em>noastre.</em></h2><p class="bodycopy">Alege un serviciu pentru a afla cum se desfășoară evaluarea și ce variante poate discuta medicul cu tine.</p></div><div class="specialty-grid" id="specialtyGrid" aria-label="Specialități stomatologice"><noscript>Profilaxie, carii, estetică, ortodonție, parodontologie, chirurgie, implantologie și protezare.</noscript></div><p class="specialty-foot">Informații generale, fără înlocuirea consultului medical.</p></div></section>
+<section class="services" id="proces"><div class="wrap"><p class="section-number">GRIJA DDENT / PAS CU PAS</p><div class="section-intro"><h2>Mai multă<br><em>grijă la fiecare pas.</em></h2><p class="bodycopy">De la prima conversație până la recomandările de îngrijire, fiecare etapă începe cu înțelegerea nevoilor pacientului.</p></div><div class="services-summary"><div><span class="sm-icon">01</span><h3>Consultația inițială</h3><p>Discutăm istoricul și nevoile, apoi medicul recomandă pașii următori.</p></div><div><span class="sm-icon">02</span><h3>Planificare individuală</h3><p>Opțiunile sunt adaptate rezultatului evaluării clinice.</p></div><div><span class="sm-icon">03</span><h3>Comunicare clară</h3><p>Explicăm procedurile și îți răspundem la întrebări.</p></div></div></div></section>
+  <section class="editorial" id="experienta" aria-label="Experiența vizitei"><img src="https://images.pexels.com/photos/3884101/pexels-photo-3884101.jpeg?auto=compress&cs=tinysrgb&w=1920&q=85" loading="lazy" alt="Medic stomatolog conversând cu un pacient într-o clinică, fotografie ilustrativă" data-depth="-0.13"><div class="wrap editorial-content reveal"><div class="eyebrow">O EXPERIENȚĂ CENTRATĂ PE OM</div><h2>Nu doar despre dinți.<br><em>Despre tine.</em></h2><p style="font-size:10px;letter-spacing:.12em">FOTOGRAFIE ILUSTRATIVĂ · PEXELS</p></div></section><section class="case-section" id="cazuri"><div class="wrap"><p class="section-number">05 / REZULTATE DIN CABINET</p><div class="section-intro"><h2>Cazuri care spun<br><em>povești reale.</em></h2><p class="bodycopy">O galerie pregătită pentru fotografii reale înainte și după, exclusiv cu acordul pacientului. Fără simulări prezentate drept rezultate clinice.</p></div></div><div class="cases-rail" id="casesRail" tabindex="0" aria-label="Galerie de cazuri din cabinet"></div><div class="wrap cases-foot"><span>Demo de structură — nu prezintă cazuri reale.</span><button type="button" id="casesNext">Următorul caz ↗</button></div></section>
+<section class="video-stories" id="povesti"><div class="wrap"><p class="section-number">06 / POVEȘTI VIDEO</p><div class="section-intro"><h2>Pacienții au<br><em>cuvântul.</em></h2><p class="bodycopy">Experiențe povestite chiar de pacienți. Fiecare video va putea fi redat doar după apăsarea butonului Play.</p></div><div class="video-story-grid" id="videoGrid"></div></div></section>
+  <div class="metric-highlight"><div class="wrap numbers" aria-label="Date prezentate pentru verificare"><div class="number-cell reveal"><strong>24</strong><span>ANII DE PRACTICĂ</span></div><div class="number-cell reveal"><strong>5.000+</strong><span>PACIENȚI TRATAȚI</span></div><div class="number-cell reveal"><strong>2016</strong><span>CLINICĂ ÎNFIINȚATĂ</span></div></div><div class="wrap"><span class="numbers-disclaimer">Cifre transmise pentru concept; confirmarea lor în scris de către clinică este necesară înainte de publicarea oficială.</span></div></div>
+  <section class="review-section-new" id="recenzii"><div class="wrap"><p class="section-number">03 / CUVINTE CARE CONTEAZĂ</p><div class="reviews-top"><h2>Încrederea se<br><em>construiește.</em></h2><div class="review-rating"><strong>4.9 / 5</strong><small><span id="reviewArchiveCount">31</span> fragmente · 45 recenzii Google</small></div></div></div><div class="review-viewport" id="reviewViewport"><div class="review-track" id="reviewTrack"></div></div><div class="wrap review-actions"><p>Din recenziile cu text transmise pentru proiect. Consultați profilul Google pentru lista completă și recenziile originale.</p><div class="controls"><button type="button" id="reviewPause" aria-pressed="false">Pauză ◼</button><a class="pill secondary" href="https://www.google.com/maps/place/DDent+Stomatologie/" target="_blank" rel="noopener noreferrer">Recenzii Google ↗</a></div></div></section>
+  <section class="doctors-section" id="echipa"><div class="wrap"><p class="section-number">07 / OAMENII DIN SPATELE ÎNGRIJIRII</p><div class="section-intro"><h2>Oameni cărora le<br><em>poți vorbi.</em></h2><p class="bodycopy">Contact direct cu medicii prezentați pe website-ul oficial DDent.</p></div><div class="doctors-grid"><article class="doctor-card"><div class="doctor-avatar" aria-hidden="true">AD</div><div><small>MEDIC STOMATOLOG</small><h3>Andrei Dumbravă</h3><p>DDent Stomatologie</p><a href="mailto:dumbravadent@gmail.com">dumbravadent@gmail.com ↗</a></div></article><article class="doctor-card"><div class="doctor-avatar" aria-hidden="true">VC</div><div><small>MEDIC STOMATOLOG</small><h3>Victor Cazaciuc</h3><p>DDent Stomatologie</p><a href="mailto:victorcazaciuc@gmail.com">victorcazaciuc@gmail.com ↗</a></div></article></div></div></section><section class="map-section" id="viziteaza"><div class="wrap visit-grid"><div class="reveal"><p class="section-number">04 / VIZITEAZĂ-NE</p><h2>Ne vedem<br><em>la DDent.</em></h2><div class="hours"><span>Luni — Vineri</span><strong>09:00 — 18:00</strong><span>Sâmbătă</span><strong>09:00 — 15:00</strong></div><div class="contact-block"><div class="eyebrow">ADRESĂ</div><p>Strada Albișoara 82/6, oficiul 4<br>Chișinău, Republica Moldova</p></div><div class="contact-block"><div class="eyebrow">TELEFON</div><a href="tel:+37379526737">+373 795 26 737</a></div><div class="contact-block"><div class="eyebrow">E-MAIL</div><a href="mailto:dumbravadent@gmail.com">dumbravadent@gmail.com</a></div></div>
+    <a class="map-link reveal" aria-label="Deschide indicațiile de navigare către DDent în Google Maps" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/?api=1&destination=DDent+Stomatologie%2C+Strada+Albi%C8%99oara+82%2F6%2C+Chi%C8%99in%C4%83u%2C+Moldova"><div class="map-art" data-depth="0.04"></div><div class="map-pin">DD</div><div class="map-caption"><div><b>DDent Stomatologie</b><small>Albișoara 82/6, of. 4 · Chișinău</small></div><span class="arr">↗</span></div></a></div></section>
+  <section class="cta"><div class="wrap cta-inner reveal"><div class="eyebrow">URMĂTORUL PAS</div><h2>Ai grijă de zâmbetul<br><em>tău, de azi.</em></h2><a class="pill" href="tel:+37379526737">Sună pentru o programare <span class="arrow">↗</span></a></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-grid"><div><a class="logo" href="#acasa" aria-label="DDent - sus">
+<svg class="logo-symbol" viewBox="0 0 43 50" fill="none" aria-hidden="true"><path d="M7 5C11 1.8 16 2 21.5 5c6-3 11.1-3.2 14.5 0 7.6 7.1 2.1 22.6-1.7 30.5-2.7 5.6-6.4 10-9 10-3.3 0-2.6-11-4.3-14.5-1.1-2.3-3.3-2.3-4.4 0-1.7 3.5-1 14.5-4.3 14.5-2.6 0-6.2-4.4-9-10C4.9 27.6-.6 12.1 7 5Z" stroke="currentColor" stroke-width="2.3"/><path d="M21.5 5v18.5" stroke="currentColor" stroke-width="2.3"/></svg><span class="logo-text"><strong>DDent</strong><small>STOMATOLOGIE</small></span></a><p class="footer-desc">Un zâmbet sănătos începe cu o conversație.</p><div id="socialLinks" class="social-links" aria-label="Rețele sociale oficiale DDent"></div></div><div><div class="eyebrow">LINKURI</div><a href="#filosofie">Despre noi</a><br><a href="#servicii">Servicii</a><br><a href="#recenzii">Recenzii</a><br><a href="#viziteaza">Program & locație</a></div><div><div class="eyebrow">VORBIM?</div><a href="tel:+37379526737">+373 795 26 737</a><br><a href="mailto:dumbravadent@gmail.com">dumbravadent@gmail.com</a><br><a href="https://www.facebook.com/ddent.stomatologie/" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div></div>
+<div class="footer-legal"><a href="/legal.html#privacy">Confidențialitate</a><a href="/legal.html#terms">Termeni de utilizare</a><a href="/legal.html#cookies">Cookie-uri</a></div><p class="compliance-note">Materialele medicale și cifrele statistice necesită validarea clinicii înainte de lansarea pe domeniul oficial.</p><div class="footer-bottom"><span>© <span id="year">2026</span> DDent Stomatologie. Toate drepturile rezervate.</span><span>Concept & dezvoltare web: BRAND ME · <a href="https://ddent.md/" target="_blank" rel="noopener noreferrer">Site oficial</a></span></div></div></footer>
+<div class="mobile-book"><a class="pill" href="tel:+37379526737">Programează-te ↗</a><a class="pill" href="https://www.google.com/maps/dir/?api=1&destination=DDent+Stomatologie%2C+Chi%C8%99in%C4%83u" target="_blank" rel="noopener noreferrer">Indicații ↗</a></div>
+<script>
+(function(){
+  "use strict";
+  var year=document.getElementById("year");if(year)year.textContent=String(new Date().getFullYear());
+  var nav=document.getElementById("navigation"),menu=document.getElementById("menuToggle"),links=document.getElementById("navLinks");
+  function setMenu(open){links.classList.toggle("open",open);menu.setAttribute("aria-expanded",String(open));menu.setAttribute("aria-label",open?"Închide meniul":"Deschide meniul");document.body.classList.toggle("menu-open",open)}
+  menu.addEventListener("click",function(){setMenu(!links.classList.contains("open"))});
+  links.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){setMenu(false)})});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")setMenu(false)});
+  var video=document.getElementById("heroVideo"),toggle=document.getElementById("videoToggle"),state=document.getElementById("videoState"),icon=document.getElementById("videoIcon");
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)");
+  function updateVideoUI(){var playing=!video.paused;state.textContent=playing?"PAUZĂ VIDEO":"REDA VIDEO";icon.textContent=playing?"Ⅱ":"▶";toggle.setAttribute("aria-label",playing?"Pune videoclipul pe pauză":"Redă videoclipul")}
+  toggle.addEventListener("click",function(){if(video.paused){video.play().catch(function(){updateVideoUI()})}else video.pause();updateVideoUI()});
+  video.addEventListener("play",updateVideoUI);video.addEventListener("pause",updateVideoUI);
+  if(reduce.matches){video.pause();updateVideoUI()}else{video.play().catch(function(){updateVideoUI()})}
+  var revealObserver=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");revealObserver.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -15px 0px"});
+  document.querySelectorAll(".reveal").forEach(function(el){revealObserver.observe(el)});
+  var layers=[].slice.call(document.querySelectorAll("[data-depth]"));
+  var ticking=false;
+  function updateScroll(){var y=window.scrollY;nav.classList.toggle("scrolled",y>18);if(!reduce.matches){var vh=window.innerHeight;layers.forEach(function(el){var r=el.parentElement.getBoundingClientRect();if(r.bottom<0||r.top>vh)return;var p=(r.top+r.height/2-vh/2)/vh;var depth=parseFloat(el.getAttribute("data-depth"))||0;var translate=Math.max(-60,Math.min(60,-p*depth*vh));el.style.transform="translate3d(0,"+translate.toFixed(1)+"px,0) scale(1.08)";})}ticking=false}
+  window.addEventListener("scroll",function(){if(!ticking){requestAnimationFrame(updateScroll);ticking=true}},{passive:true});window.addEventListener("resize",updateScroll,{passive:true});updateScroll();
+  document.querySelectorAll(".service-row").forEach(function(row){row.addEventListener("toggle",function(){if(row.open)document.querySelectorAll(".service-row").forEach(function(other){if(other!==row)other.open=false})})});
+})();
+</script>
+<div class="service-modal" id="serviceModal" aria-hidden="true"><div class="service-dialog" role="dialog" aria-modal="true" aria-labelledby="modalSpecialty"><button type="button" class="close" id="modalClose" aria-label="Închide detaliile">×</button><p class="eyebrow">DDENT / SPECIALITATE</p><h2 id="modalSpecialty"></h2><p class="bodycopy" id="modalDesc"></p><h3>Etapele orientative</h3><ul id="modalSteps"></ul><p class="bodycopy">Informațiile sunt generale. Un plan de tratament se stabilește doar după consultație.</p><a class="pill" href="tel:+37379526737">Programează o consultație ↗</a></div></div><script src="/content.js" defer></script><script src="/enhancements.js" defer></script></body>
+</html>
